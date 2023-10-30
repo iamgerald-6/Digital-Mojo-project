@@ -10,7 +10,7 @@ import { RecentPages } from "./pages/RecentPages.jsx";
 import { InspirationPage } from "./pages/InspirationPage.jsx";
 import { IntoCoursesPages } from "./pages/IntoCoursesPages.jsx";
 import {WalletPage} from "./pages/WalletPage.jsx";
-// import { ProfilePage } from "./pages/ProfilePage.jsx";
+import { ProfilePage } from "./pages/ProfilePage.jsx";
 import { ChatPage } from "./pages/ChatPage.jsx";
 import { ChatTutorialsPage } from "./pages/ChatTutorialsPage.jsx";
 import { ChatCatalogPage } from "./pages/ChatCatalogPage.jsx";
@@ -29,15 +29,17 @@ function App() {
       
       <AsideBar/>
       <Routes>
-        <Route path="/" element={<All />} />
+        <Route path="/" element={<All />}/>
         <Route path='tutorials' element={<TutorialsPage/>}/>
         <Route path='templates' element={<TemplatesPage/>}/>
         <Route path='courses' element ={<RecentPages/>}/>
         <Route path='wallet' element={<WalletPage/>}/>
-        {/* <Route path='profile' element={<ProfilePage/>}/> */}
-        <Route path='intocourse' element ={<IntoCoursesPages/>}/>
         <Route path ='catalog' element={<CatalogPage/>}/>
         <Route path ='Inspiration' element={<InspirationPage/>}/>
+        <Route path='explore' element={<ProfilePage/>}/>
+        <Route path='intocourse' element ={<IntoCoursesPages/>}/>
+        
+        
         <Route path ='chat' element={<ChatPage/>}/>
         <Route path ='chatPage' element={<ChatPage/>}/>
         <Route path ='chatTutorials' element={<ChatTutorialsPage/>}/>

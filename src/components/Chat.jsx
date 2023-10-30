@@ -20,7 +20,7 @@ export const Chat = (props) => {
                     </div>
                 </div>
 
-                <div id={props.buttons} className='flex flex-col mt-5 lg:me-10 sm:hidden md:block hidden'>
+                <div id={props.buttons} className='md:flex md:flex-col mt-5 lg:me-10 sm:hidden  hidden'>
                     <button className='hover:bg-dark-100 hover:text-light-200 transition ease-out duration-500 border px-4 py-2 rounded-lg mb-2'>Upgrade to Agency</button>
                     <Link  to='/general' className='hover:bg-dark-100 hover:text-light-200 text-center transition ease-out duration-500 border px-4 py-2 rounded-lg mb-2' >Edit profile</Link>
                 </div>

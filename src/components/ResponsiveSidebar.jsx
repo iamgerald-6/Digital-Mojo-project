@@ -38,7 +38,7 @@ export const ResponsiveSidebar = () => {
               onClick={closeSidebar}
               className='cursor-pointer text-secondary-100 absolute top-3 right-3'/>
                 <ul className='mt-7 ms-5'>
-                    <li className='text-secondary-100 mt-4 font-bold text-xl hover:text-opacity-40 transition ease-in-out duration-300 sm:w-[30vw] md:w-[25vw] w-[43vw] rounded-2xl  border px-3 py-1'><NavLink to='/profile'>Explore Design</NavLink></li>
+                    <li className='text-secondary-100 mt-4 font-bold text-xl hover:text-opacity-40 transition ease-in-out duration-300 sm:w-[30vw] md:w-[25vw] w-[43vw] rounded-2xl  border px-3 py-1'><NavLink to='/explore'>Explore Design</NavLink></li>
                     <li className='text-secondary-100 mt-4 font-bold text-xl hover:text-opacity-40 transition border ease-in-out duration-300 sm:w-[30vw] md:w-[25vw]  w-[43vw] px-3 py-1 rounded-2xl '><NavLink to='/'>Resources</NavLink></li>
                     <li className='text-secondary-100 mt-4 font-bold text-xl hover:text-opacity-40 transition ease-in-out duration-300 sm:w-[30vw] w-[43vw] md:w-[25vw]  px-3 py-1 rounded-2xl '><NavLink to='/wallet'>Wallet</NavLink></li>
                     <li className='text-secondary-100 mt-4 font-bold text-xl hover:text-opacity-40 transition ease-in-out duration-300 sm:w-[30vw] w-[43vw] md:w-[25vw]  px-3 py-1 rounded-2xl '><NavLink to='/chat'>Chat</NavLink></li>
