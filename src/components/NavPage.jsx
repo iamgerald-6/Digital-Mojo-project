@@ -35,7 +35,7 @@ export const NavPage = (props) => {
                 <ul className='flex items-start mt-4 gap-5 '>
                   <li className='lg:flex hidden mt-2'><FiBell className='mt-1 me-3' size={19}/>notifications</li>
                   <div className='lg:flex items-center lg:bg-secondary-400 gap-7 lg:rounded-md lg:me-2 lg:ps-1'>
-                    <li className='lg:flex hidden '>500 Credit</li>
+                    <li className='lg:flex hidden'>500 Credit</li>
                     <li className='lg:flex'><span className='lg:mt-2.5 hidden  lg:block lg:me-3'>Elton</span><img  className='' src={ProfileOne} alt='profile'/></li>
                   </div>
                   <ResponsiveSidebar/>
