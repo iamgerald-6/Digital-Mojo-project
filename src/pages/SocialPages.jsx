@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavPage } from '../components/NavPage'
-import { Chat } from '../components/Chat'
-import { ProfileNav } from '../components/ProfileNav'
-import { Social } from '../components/Social'
+import { NavPage } from '../components/NavPage.jsx'
+import { Chat } from '../components/Chat.jsx'
+import { ProfileNav } from '../components/ProfileNav.jsx'
+import { Social } from '../components/Social.jsx'
 
 export const SocialPages = () => {
   return (

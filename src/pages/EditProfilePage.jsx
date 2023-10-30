@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavPage } from '../components/NavPage'
-import { Chat } from '../components/Chat'
-import { ProfileNav } from '../components/ProfileNav'
-import { EditProfile } from '../components/EditProfile'
+import { NavPage } from '../components/NavPage.jsx'
+import { Chat } from '../components/Chat.jsx'
+import { ProfileNav } from '../components/ProfileNav.jsx'
+import { EditProfile } from '../components/EditProfile.jsx'
 
 export const EditProfilePage = () => {
   return (

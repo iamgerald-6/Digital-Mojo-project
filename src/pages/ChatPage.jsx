@@ -1,7 +1,7 @@
 import React from 'react'
-import { NavPage } from '../components/NavPage';
-import { Chat } from '../components/Chat';
-import { ChatNav } from '../components/ChatNav';
+import { NavPage } from '../components/NavPage.jsx';
+import { Chat } from '../components/Chat.jsx';
+import { ChatNav } from '../components/ChatNav.jsx';
 
 
 import { ItemsChat } from '../components/ItemsChat.jsx';
