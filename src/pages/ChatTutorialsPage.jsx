@@ -1,8 +1,8 @@
 import React from 'react'
-import { ChatNav } from '../components/ChatNav';
-import { NavPage } from '../components/NavPage';
-import { Chat } from '../components/Chat';
-import { ChatTutorials } from '../components/chatTutorials';
+import { ChatNav } from '../components/ChatNav.jsx';
+import { NavPage } from '../components/NavPage.jsx';
+import { Chat } from '../components/Chat.jsx';
+import { ChatTutorials } from '../components/chatTutorials.jsx';
 
 
 export const ChatTutorialsPage = () => {

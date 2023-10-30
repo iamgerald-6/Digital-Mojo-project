@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavPage } from '../components/NavPage'
-import { Chat } from '../components/Chat'
-import { ProfileNav } from '../components/ProfileNav'
-import { General } from '../components/General'
+import { NavPage } from '../components/NavPage.jsx'
+import { Chat } from '../components/Chat.jsx'
+import { ProfileNav } from '../components/ProfileNav.jsx'
+import { General } from '../components/General.jsx'
 
 export const GeneralPage = () => {
   return (

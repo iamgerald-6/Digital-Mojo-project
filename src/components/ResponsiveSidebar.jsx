@@ -32,7 +32,7 @@ export const ResponsiveSidebar = () => {
         </div>
             
 
-            <div className={`${isOpen ? ' block sm:block' : 'hidden sm:hidden'} h-[100%] border fixed w-100 top-0 right-0 rounded-lg bg-dark-100 overflow-x-hidden w-[50vw] transition  ease-in-out duration-500 pt-6 shadow-xl`}>
+            <div className={`${isOpen ? ' block sm:block' : 'hidden sm:hidden'} h-[100%] border fixed w-100 top-0 right-0 rounded-lg bg-dark-100 overflow-x-hidden w-[50vw] overflow-y-scroll transition  ease-in-out duration-500 pt-6 shadow-xl`}>
               <AiOutlineClose
               size={30}
               onClick={closeSidebar}
@@ -47,8 +47,8 @@ export const ResponsiveSidebar = () => {
                 
                 <hr className='bg-secondary-100 mx-3 mt-20'></hr>
                 <ul className='mt-3 ms-5'>
-                    <li className='text-secondary-100 font-bold  text-xl hover:text-opacity-40 transition ease-in-out border border-secondary-100 rounded-lg duration-300 md:w-[30vw] sm:w-[35vw] w-[44vw] px-3 py-1'><Link>Upgrade to agency</Link></li>
-                    <li className='text-secondary-100 mt-4 mb-4 font-bold  text-xl hover:text-opacity-40 transition ease-in-out duration-300 px-3 py-1 border border-secondary-100 rounded-lg md:w-[30vw] sm:w-[35vw] w-[40vw]'><Link>Upgrade now</Link></li>
+                    <li className='text-secondary-100 font-bold  text-xl hover:text-opacity-40 transition ease-in-out border border-secondary-100 rounded-lg duration-300 md:w-[30vw] sm:w-[35vw] w-[43vw] px-3 py-1'><Link>Upgrade to agency</Link></li>
+                    <li className='text-secondary-100 mt-4 mb-4 font-bold  text-xl hover:text-opacity-40 transition ease-in-out duration-300 px-3 py-1 border border-secondary-100 rounded-lg md:w-[30vw] sm:w-[35vw] w-[39vw]'><Link>Upgrade now</Link></li>
                 </ul>
                 <hr className='bg-secondary-100 mx-3'></hr>
                 <div className='flex flex-col justify-start mt-3 ms-5'>
