@@ -3,13 +3,13 @@ import React from 'react'
 export const Password = () => {
   return (
     <>
-            <div className='lg:w-[61vw] md:w-[80vw] sm:w-[100vw] bg-secondary-400 h-[78vh] rounded-lg mt-8 ps-10 sm:ms-6'>
+            <div className='lg:w-[69vw] md:w-[80vw] sm:w-[100vw] bg-light-200 h-[77vh] rounded-lg mt-5 me-16 ps-10 sm:ms-6'>
                 <form className='flex flex-col me-10 mt-5'>
                   
-                    <label htmlFor='password' className='font-semibold'>Old password</label>
+                    <label htmlFor='password' className='font-sfRegular text-xl'>Old password</label>
                     <div className='mt-2'>
                       <input
-                      className='rounded-md ps-3 py-2 w-[55vw]'
+                      className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400 placeholder-secondary-100'
                       id='password'
                       type='password'
                       placeholder='Enter password'
@@ -19,9 +19,9 @@ export const Password = () => {
                   </div>
                   
                   
-                    <label htmlFor='new-password' className='mt-14 font-semibold'>New Password</label>
+                    <label htmlFor='new-password' className='mt-10 font-sfRegular text-xl'>New Password</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-2 w-[55vw]'
+                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400 placeholder-secondary-100'
                       id='new-password'
                       type='password' name='password'
                       placeholder='Enter password'
@@ -29,18 +29,18 @@ export const Password = () => {
                       minLength={8}/>
                   </div>
 
-                  <label htmlFor='con-password' className='mt-10 font-semibold'>Confirm Password</label>
+                  <label htmlFor='con-password' className='mt-10 font-sfRegular text-xl'>Confirm Password</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-2 w-[55vw]'
+                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400 placeholder-secondary-100'
                       id='con-password'
                       type='password' name='password'
                       placeholder='Enter password'
                       required maxLength={15}
                       minLength={8}/>
                   </div>
-                  <div className='flex sm:justify-end sm:h-[9vh] mt-20'>
+                  <div className='flex sm:justify-end sm:h-[9vh] mt-12'>
                     <div className=''>
-                       <button className='bg-dark-100 text-light-200 rounded-xl border px-5 py-2'>Save changes</button>
+                       <button className='bg-dark-100 text-light-200 rounded-[15px] border px-5 py-2 font-sfMedium'>Save changes</button>
                     </div>
                   </div>
                   

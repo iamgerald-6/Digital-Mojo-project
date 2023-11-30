@@ -9,13 +9,19 @@ export default {
     extend: {
       fontFamily: {
         family: 'Unbounded',
-        fam:'SF Pro Display'
+        sfRegular:'SF-Pro-Display-Regular',
+        sfBold: 'SF-Pro-Display-Bold',
+        sfMedium: 'SF-Pro-Display-Medium',
+        sfSemiBold: 'SF-Pro-Display-semiBold',
+        sfThin: 'SF-Pro-Display-Thin',
+        sfLight: 'SF-Pro-Display-Light'
       },
+
       colors: {
           primary: {
             100:'#E9FF9D',
             200:'#FDFFA9',
-            500:'#0028FB',
+            500:'#0028FB'
             
           },
           secondary:{
@@ -47,6 +53,12 @@ export default {
             100:'#F8FFDD',
             200:'#FFF',
             300: '#EBEBEB'
+          },
+          purp: {
+            100: '#AA53F5',
+            200: '#CD93B1',
+            300: '#F6DE62',
+            400: '#CEBDEF'
           }
       },
       positionAbsolute:{

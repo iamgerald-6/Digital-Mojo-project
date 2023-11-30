@@ -1,42 +1,57 @@
 import React from 'react'
-import Tutorials1 from '../assets/tutorials1.png';
-import Tutorials2 from '../assets/tutorials2.png';
-import Tutorials3 from '../assets/tutorials3.png';
-import Tutorials4 from '../assets/tutorials4.png';
+import Tut1 from '../assets/Tut1.png';
+import Tut2 from '../assets/Tut2.png';
+import Tut5 from '../assets/Tut5.png';
+import Tut4 from '../assets/Tut4.png';
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 const Tutorials = (props) => {
   return (
     <>
-        <div className='flex xl:justify-end lg:justify-end mt-5'>
-            <div className='xl:w-[78vw] lg:w-[78vw] w-[100vw] justify-between  flex xl:justify-between lg:justify-between'>
-                <h3 className='mt-3 text-xl font-bold'>{props.name}</h3>
-                <Link  to='#' className='mt-3 text-blue-700 underline'>{props.title}</Link>
+        <div className='mt-5'>
+            <div className='w-[100%] justify-between  flex px-10'>
+                <h3 className='mt-3 text-xl  font-sfBold'>{props.name}</h3>
+                <Link  to='#' className='mt-3 text-blue-700 underline font-sfMedium'>{props.title}</Link>
             </div>
         </div> 
-        <div className='grid lg:grid-cols-5 md:grid-cols-4 md:gap-4 sm:grid-cols-2  sm:gap-3 mt-3 '>
+        <div className='grid lg:grid-cols-4  md:gap-4 sm:grid-cols-2  sm:gap-3 mt-3 mx-10'>
 
              
-                <div className=' xl:col-end-3 lg:col-end-3'>
-                        <img className='sm:w-[49vw] w-[100vw]' src={Tutorials1} alt='TutorialPic1'/>
-                        <h6 className='font-bold xl:text-lg lg:text-md  mt-1 '>How to create a facebook post</h6>   
-                </div>
-                    <div >
-                        <img className='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6'src={Tutorials2} alt='TutorialPic2'/>
-                        <h6 className='font-bold xl:text-lg lg:text-md tracking-wide'>How to create a linkedin post</h6>
+                <motion.div 
+                    whileHover={{zIndex:0, scale:1.04, boxShadow:'3px 3px 3px 3px rgba(30,0,0,0.2)', borderRadius:'20px'}}
+                    transition={{type:'spring', stiffness:130, delay: 0.1}}
+                className='cursor-pointer'>
+                        <img className=' w-[100vw]' src={Tut1} alt='TutorialPic1'/>
+                        <h6 className=' text-base text-center mt-1 font-sfMedium '>How to create a facebook post</h6>   
+                </motion.div>
+                    <motion.div
+                    className='cursor-pointer'
+                     whileHover={{scale:1.04, boxShadow:'3px 3px 3px 3px rgba(30,0,0,0.2)', borderRadius:'20px'}}
+                     transition={{type:'spring', stiffness:130, delay: 0.1}}
+                    >
+                        <img className=' w-[100vw] sm:mt-0 mt-6'src={Tut2} alt='TutorialPic2'/>
+                        <h6 className='font-sfMedium text-base text-center tracking-wide mt-1'>How to create a linkedin post</h6>
                         
-                    </div>
+                    </motion.div>
              
-                <div className=''>
-                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Tutorials3} alt='TutorialPic3'/>
-                    <h6 className='font-bold xl:text-lg lg:text-md xl:-tracking-normal lg:tracking-tighter'>Creating engaging instagram posts</h6>
+                <motion.div 
+                
+                 whileHover={{scale:1.04, boxShadow:'3px 3px 3px 3px rgba(30,0,0,0.2)', borderRadius:'20px'}}
+                 transition={{type:'spring', stiffness:130, delay: 0.1}}
+                className='cursor-pointer'>
+                    <img className =' w-[100vw] sm:mt-0 mt-6' src={Tut5} alt='TutorialPic3'/>
+                    <h6 className='font-sfMedium text-base text-center mt-1'>Creating engaging instagram posts</h6>
                      
-                </div>
+                </motion.div>
 
-                <div className=''>
-                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Tutorials4} alt='TutorialPic4'/>
-                    <h6 className='font-bold xl:text-lg lg:text-md'>How to create a facebook post</h6>
-                </div>
+                <motion.div 
+                 whileHover={{scale:1.04, boxShadow:'3px 3px 3px 3px rgba(30,0,0,0.2)', borderRadius:'20px'}}
+                 transition={{type:'spring', stiffness:130, delay: 0.1}}
+                className='cursor-pointer'>
+                    <img className =' w-[100vw] sm:mt-0 mt-6' src={Tut4} alt='TutorialPic4'/>
+                    <h6 className='font-sfMedium text-base text-center mt-1'>How to create a facebook post</h6>
+                </motion.div>
 
             </div>
             

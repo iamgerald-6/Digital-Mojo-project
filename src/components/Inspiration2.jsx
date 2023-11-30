@@ -15,21 +15,21 @@ export const Inspiration2 = () => {
   return (
     <>
             
-               <div className='flex sm:flex-row flex-col lg:justify-end md:justify-start gap-4 me-4'>
+               <div className='flex sm:flex-row flex-col justify-center gap-4  mx-10 mt-5'>
                     <div className=''>
-                        <img className='lg:w-[25vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration1} alt='Inspiration'/>
+                        <img className='lg:w-[30vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration1} alt='Inspiration'/>
                     </div>
                     
                         <div className=''>
-                            <img className='lg:w-[25vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration22} alt='Inspiration'/>
+                            <img className='lg:w-[30vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration22} alt='Inspiration'/>
                         </div>
                         <div className=''>
-                            <img className='lg:w-[25vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration3} alt='Inspiration'/>
+                            <img className='lg:w-[30vw] md:w-[36vw] sm:w-[50vw] w-[100vw] mt-4' src={Inspiration3} alt='Inspiration'/>
                         </div>
                     
                 </div> 
-                <div className='grid lg:grid-cols-5 md:grid-cols-4 md:gap-6 sm:grid-cols-2'>
-                    <div className='xl:col-end-3 lg:col-end-3'>
+                <div className='grid lg:grid-cols-4 md:grid-cols-4 md:gap-3 sm:grid-cols-2 mx-10'>
+                    <div className=''>
                             <img className='sm:w-[49vw] w-[100vw] mt-4' src={Inspiration4} alt='Inspiration'/>
                     </div>
 
@@ -45,13 +45,13 @@ export const Inspiration2 = () => {
                             <img className='sm:w-[49vw] w-[100vw] mt-4' src={Inspiration7} alt='Inspiration'/>
                     </div>
                 </div>
-                <div className='flex sm:flex-row flex-col sm:justify-end '>
+                <div className='flex sm:flex-row flex-col mx-10 gap-4 '>
                     <div className=' '>
-                         <img className='mt-4 lg:w-[40vw] md:w-[53vw] w-[100vw]' src={Inspiration8} alt='Inspiration'/>
+                         <img className='mt-4 lg:w-[49vw] md:w-[53vw] w-[100vw]' src={Inspiration8} alt='Inspiration'/>
                     </div>
 
                     <div className=''>
-                         <img className='lg:w-[38vw] md:w-[46vw] w-[100vw] mt-4 mb-5' src={Inspiration9} alt='Inspiration'/>
+                         <img className='lg:w-[49vw] md:w-[46vw] w-[100vw] mt-4 mb-5' src={Inspiration9} alt='Inspiration'/>
                     </div>
                 </div>
 

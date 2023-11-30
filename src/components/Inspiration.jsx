@@ -1,41 +1,41 @@
 import React from 'react';
-import Catalog1 from '../assets/Catalog.png'
-import Catalog2 from '../assets/Catalog2.png'
-import Catalog3 from '../assets/Catalog3.png'
-import Catalog4 from '../assets/Catalog4.png'
+import Cat1 from '../assets/Cat1.png'
+import Cat2 from '../assets/Cat2.png'
+import Cat3 from '../assets/Cat3.png'
+import Cat4 from '../assets/Cat4.png'
 import { Link } from 'react-router-dom';
 
  const Inspiration = (props) => {
   return (
     <>
-        <div className='flex xl:justify-end lg:justify-end mt-8'>
-                <div className='xl:w-[78vw] lg:w-[78vw] w-[100vw] justify-between  flex xl:justify-between lg:justify-between'>
-                    <h3 className='md:mt-3 sm:mt-16 mt-16 font-bold text-xl'>Inspiration</h3>
-                    <Link  to='#' className='md:mt-3 sm:mt-16 mt-16 text-blue-700 underline'>see all</Link>
+        <div className='flex mt-8 mx-10'>
+                <div className=' w-[100vw] justify-between  flex'>
+                    <h3 className='md:mt-3 sm:mt-16 mt-16 font-sfBold text-xl'>Inspiration</h3>
+                    <Link  to='#' className='md:mt-3 sm:mt-16 mt-16 text-blue-700 underline font-sfMedium'>see all</Link>
                 </div>
         </div>
 
-            <div className='grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2  sm:gap-3 mt-6'>
-                <div className='xl:col-end-3 lg:col-end-3'>
-                    <img className =' sm:w-[49vw] w-[100vw]'src={Catalog1} alt='TutorialPic1'/>
-                    <h6 className='mt-3 mb-5 font-bold text-lg text-center'>Business branding</h6>
+            <div className='grid  md:grid-cols-4 sm:grid-cols-2  sm:gap-3 mt-3 mx-10'>
+                <div className=''>
+                    <img className =' sm:w-[49vw] w-[100vw]'src={Cat1} alt='TutorialPic1'/>
+                    <h6 className='mt-3 mb-5 font-sfMedium text-base text-center'>Business branding</h6>
                     
                 </div>
                 <div className=''>
-                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Catalog2} alt='TutorialPic2'/>
-                    <h6 className='mt-3 text-center font-bold text-lg'>Social media branding</h6>
+                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat2} alt='TutorialPic2'/>
+                    <h6 className='mt-3 text-center font-sfMedium text-base'>Social media branding</h6>
                      
                 </div>
 
                 <div className=''>
-                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Catalog3} alt='TutorialPic3'/>
-                    <h6 className='mt-3 text-center font-bold text-lg'>web design</h6>
+                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat3} alt='TutorialPic3'/>
+                    <h6 className='mt-3 text-center font-sfMedium text-base'>web design</h6>
                      
                 </div>
 
                 <div className=''>
-                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Catalog4} alt='TutorialPic4'/>
-                    <h6 className=' mt-3 text-center font-bold text-lg'>social media post</h6>
+                    <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat4} alt='TutorialPic4'/>
+                    <h6 className=' mt-3 text-center font-sfMedium text-base'>social media post</h6>
                 </div>
             
 

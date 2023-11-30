@@ -3,13 +3,13 @@ import React from 'react'
 export const Social = () => {
   return (
     <>
-        <div className='lg:w-[61vw] md:w-[80vw] sm:w-[100vw] bg-secondary-400 h-[85vh] rounded-lg mb-5 mt-8 ps-10 sm:ms-6'>
+        <div className='lg:w-[69vw] md:w-[80vw] sm:w-[100vw] bg-light-200 h-[95vh] rounded-lg mb-5 mt-5 me-16 ps-10 sm:ms-6'>
                 <form className='flex flex-col me-10 mt-5'>
                   
-                    <label htmlFor='twitter' className='font-semibold'>Twitter</label>
+                    <label htmlFor='twitter' className='font-sfRegular text-xl'>Twitter</label>
                     <div className='mt-2'>
                       <input
-                      className='rounded-md ps-3 py-2 w-[55vw]'
+                      className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
                       id='twitter'
                       type='text'
                       placeholder='Enter Socials'
@@ -19,9 +19,9 @@ export const Social = () => {
                   </div>
                   
                   
-                    <label htmlFor='facebook' className='mt-10 font-semibold'>Facebook</label>
+                    <label htmlFor='facebook' className='mt-10 font-sfRegular text-xl'>Facebook</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-2 w-[55vw]'
+                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
                       id='facebook'
                       type='text' name='facebook'
                       placeholder='Enter Socials'
@@ -29,9 +29,9 @@ export const Social = () => {
                       minLength={3}/>
                   </div>
 
-                  <label htmlFor='linkedin' className='mt-10 font-semibold'>Linkedin</label>
+                  <label htmlFor='linkedin' className='mt-10 font-sfRegular text-xl'>Linkedin</label>
                   <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-2 w-[55vw]'
+                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
                       id='linkedin'
                       type='text' name='linkedin'
                       placeholder='Enter Socials'
@@ -39,9 +39,9 @@ export const Social = () => {
                       minLength={3}/>
                   </div>
 
-                  <label htmlFor='instagram' className='mt-10 font-semibold'>Instagram</label>
+                  <label htmlFor='instagram' className='mt-10 font-sfRegular text-xl'>Instagram</label>
                   <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-2 w-[55vw]'
+                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
                       id='instagram'
                       type='text' name='instagram'
                       placeholder='Enter Socials'
@@ -50,7 +50,7 @@ export const Social = () => {
                   </div>
                   <div className='flex sm:justify-end sm:h-[9vh] sm:mt-10 mt-6'>
                     <div className=''>
-                       <button className='bg-dark-100 text-light-200 rounded-xl border px-5 py-2'>Save changes</button>
+                       <button className='bg-dark-100 text-light-200 rounded-[15px] px-5 py-2 font-sfMedium'>Save changes</button>
                     </div>
                   </div>
                   

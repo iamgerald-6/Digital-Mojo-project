@@ -2,26 +2,29 @@ import React from 'react'
 import { NavPage } from '../components/NavPage.jsx'
 import { Chat } from '../components/Chat.jsx'
 import { ChatNav } from '../components/ChatNav.jsx'
-import { ChatTemplate } from '../components/chatTemplate.jsx'
+import { ChatTemplate } from '../components/ChatTemplate.jsx'
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx'
 
 
 export const ChatTemplatePag = () => {
   return (
     <>
-         <NavPage element='props-search' elementId='props-filter' name='Profile' paragraph='Personalize and secure your account details and  security'/>
+         <Navbar/>
          <Chat name='Elton Enterprise limited'/>
         <section className='flex justify-center mt-10'>
-             <div className='bg-secondary-400 xl:w-[78vw]  lg:w-[78vw] lg:ms-64 w-[100vw] rounded-lg px-5  '>
+             <div className='bg-light-200   w-[100vw] mx-10 mb-5 rounded-2xl px-4 '>
                     <ChatNav/>
-                    <ChatTemplate/>
-                    <ChatTemplate/>
+                    <ChatTemplate hTag='Marketing agency'/>
+                    <ChatTemplate hTag='Marketing agency'/>
                     <div className='flex justify-center py-10'>
-                      <button className='border py-3 px-5 bg-dark-100 text-light-200 rounded-md'>Load more</button>
+                      <button className='border py-2 px-9 bg-dark-100 text-light-200 rounded-lg'>Load more</button>
                     </div>
              </div>
              
+             
         </section>
-    
+        <Footer/>
     
     </>
   )

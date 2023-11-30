@@ -1,8 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Tilt+Neon&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src:  url('../fonts/SF-Pro-Display-Regular.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Bold';
+    src: url('../fonts/SF-Pro-Display-Bold.ttf') ;
+            font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Medium';
+    src:  url('../fonts/SF-Pro-Display-Medium.ttf');
+            font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-semiBold';
+    src: url('../fonts/SF-Pro-Display-Semibold.ttf');
+            font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Light';
+    src: url('../fonts/SF-Pro-Display-Light.ttf');
+            font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF-Pro-Display-Thin';
+    src: url('../fonts/SF-Pro-Display-Thin.ttf');
+            font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+    background-color:  #F9F9FA;
+}
 
 /* #####################Props########################### */
 #props-certified{
@@ -36,6 +84,10 @@
     display: none;
 }
 
+#props-margin {
+    margin-top : 33px;
+}
+
 
 /* #####################Progress bar################ */
 
@@ -66,4 +118,7 @@
   
 
 
- 
+ /* ###########################Tailwind hover#######################*/
+ .hoverNav {
+    @apply hover:opacity-70 transition ease-out duration-300;
+ }
