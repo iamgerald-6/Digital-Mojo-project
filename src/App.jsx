@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 // import All from './pages/All.jsx';
 // import Navbar from './components/Navbar'
@@ -33,10 +32,67 @@ import { MessagePage } from "./pages/MessagePage.jsx";
 import { ExplorePage } from "./pages/ExplorePage.jsx";
 import { BrandPage } from "./pages/BrandPage.jsx";
 import { IntoTemplate } from "./components/IntoTemplate.jsx";
+import All from "./pages/All.jsx";
 
-const LazyAll = React.lazy(()=> import('./pages/All.jsx'))
+// const LazyAll = React.lazy(()=> import('./pages/All.jsx'))
 // const LazyExplore = React.lazy(()=> import('./pages/ExplorePage.jsx'))
 
+
+// assuming data comes from database
+const data = [
+  {
+    id: '10',
+    title: 'Tutorials',
+    description: 'this is the tutorials items',
+    items: [
+      {id: '100001', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100002', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100003', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100004', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100005', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100006', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+    ],
+  },
+
+  {
+    id: '11',
+    title: 'Inspiration',
+    description: 'this is the tutorials items',
+    items: [
+      {id: '100007', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100008', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+    ],
+  },
+
+  {
+    id: '12',
+    title: 'Catalog',
+    description: 'this is the tutorials items',
+    items: [
+      {id: '100009', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100010', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100011', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100012', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+    ],
+  },
+
+  {
+    id: '13',
+    title: 'Templates',
+    description: 'this is the tutorials items',
+    items: [
+      {id: '100013', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100014', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100015', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100016', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100017', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100018', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100019', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100020', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+      {id: '100021', title: 'How to create a facebook post', image: 'assets/Tut1.png' },
+    ],
+  },
+];
 
 function App() {
   return (
@@ -45,9 +101,10 @@ function App() {
       {/* <AsideBar/> */}
       <Routes>
        
-        <Route path='/' element ={<React.Suspense fallback='Loading....'> 
+        {/* <Route path='/' element ={<React.Suspense fallback='Loading....'> 
             <LazyAll/>
-        </React.Suspense>}/>
+        </React.Suspense>}/> */}
+        <Route path='/' element={<All data={data}/>}/>
         <Route path='tutorials' element={<TutorialsPage/>}/>
         <Route path='templates' element={<TemplatesPage/>}/>
         <Route path='courses' element ={<RecentPages/>}/>
