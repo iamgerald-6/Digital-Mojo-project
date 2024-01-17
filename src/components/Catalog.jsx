@@ -16,27 +16,27 @@ import { Link } from 'react-router-dom';
         </div>
 
             <div className='grid  md:grid-cols-4 md:gap-4 sm:grid-cols-2  sm:gap-3 mx-10 mt-3'>
-                <div className=''>
+                <Link to='/intoCatalog' className=''>
                     <img className ='sm:w-[49vw] w-[100vw]'src={Cat1} alt='TutorialPic1'/>
                     <h6 className='mt-3 font-sfMedium text-base text-center'>Business branding</h6>
-                </div>
+                </Link>
 
-                <div className=' '>
+                <Link to='/intoCatalog'className=' '>
                     <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat2} alt='TutorialPic2'/>
                     <h6 className='mt-3 text-center font-sfMedium text-base'>Social media branding</h6>
                      
-                </div>
+                </Link>
 
-                <div className=''>
+                <Link to='/intoCatalog' className=''>
                     <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat3} alt='TutorialPic3'/>
                     <h6 className='mt-3 text-center font-sfMedium text-base'>web design</h6>
                      
-                </div>
+                </Link>
 
-                <div className=''>
+                <Link to='/intoCatalog'  className=''>
                     <img className ='sm:w-[49vw] w-[100vw] sm:mt-0 mt-6' src={Cat4} alt='TutorialPic4'/>
                     <h6 className=' mt-3 text-center font-sfMedium text-base'>social media post</h6>
-                </div>
+                </Link>
 
             </div>
             

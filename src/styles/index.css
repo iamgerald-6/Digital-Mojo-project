@@ -115,6 +115,9 @@ body{
     width:9px
   }
 
+  .select-box{
+    -webkit-appearance: none;
+  }
   
 
 

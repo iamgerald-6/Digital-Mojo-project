@@ -7,10 +7,23 @@ import Star from '../assets/Star.svg';
 import Ellipse3 from '../assets/Ellipse3.svg';
 import Ellipse2 from '../assets/Ellipse2.svg';
 import Ellipse4 from '../assets/Ellipse4.svg'
+import { Modal } from './Modal';
+import { OtpModal } from './OtpModal';
 
 export const Wallet = () => {
 
-  const [progress, setProgress] =useState(0)
+  const [progress, setProgress] =useState(0);
+  const [showModal, setShowModal] =useState(false);
+
+  const openModal = () => {
+    setShowModal(true)
+  }
+
+  const closeModal = () =>{
+    setShowModal(false);
+  }
+  
+  // const [showSecondModal, setShowSecondModal] = useState(false);
 
   const handleChange = () => {
     if(progress < 100){
@@ -18,11 +31,12 @@ export const Wallet = () => {
     } 
   }
   
+  
   return (
     <>
-      <section className='lg:flex lg:justify-end mt-12'>
-       <div className='lg:flex lg:w-[78vw] lg:gap-9'>
-        <div className='border w-[44vw] h-[40vh] py-5 bg-success-400 relative rounded-md'>
+      <section className='lg:flex  mt-9 mx-10 bg-light-200 px-5 rounded-[30px] py-5'>
+       <div className='lg:flex  lg:gap-9'>
+        <div className='border w-[53vw] h-[40vh] py-5 bg-success-400 relative rounded-md'>
           <div className='flex ms-7'>
               <img src={Credit} alt='Credit'/>
               <div className='ms-4 mt-2'>
@@ -33,15 +47,15 @@ export const Wallet = () => {
           <div className='mt-12 ms-7'>
               <h3 className='font-semibold text-xs'>Credit available</h3>
               <div className='flex h-3.5'>
-                <div className='w-[20vw] border rounded-md bg-white mt-2'>
+                <div className='w-[25vw] border rounded-md bg-white mt-2 '>
                   <div className='progress-fill rounded-md'style={{width: `${progress}%`}}></div>
                   
                 </div>
-                <div className='progress-label ms-2'>{progress}%</div>
+                <div className='progress-label ms-4'>{progress}%</div>
               </div>
               
               
-              <button  onClick={handleChange} className='mt-5 px-5 py-1  bg-white text-success-100 rounded-lg'> Top up</button>
+              <button   onClick={openModal} className='mt-5 px-5 py-1  bg-white text-success-100 rounded-lg'>Top up </button>
           </div>
           <div className=' absolute top-0 end-0'>
               <img className='w-[17vw]'src={DollarsSign} alt='Dollars'/>
@@ -49,7 +63,7 @@ export const Wallet = () => {
         </div>
 
 
-        <div className='border w-[30vw] h-[39vh] bg-dark-100 rounded-lg relative'>
+        <div className='border w-[35vw] h-[39vh] bg-dark-100 rounded-lg relative'>
             <div className='mt-5 ms-5'>
               <h3 className='text-light-300 text-sm'>Credit balance</h3>
               <h1 className='text-light-200 font-family text-4xl mt-4'>500</h1>
@@ -57,7 +71,7 @@ export const Wallet = () => {
             <div className='mt-24 ms-3'>
               <Link className='text-light-300 '><h6 className='flex text-sm underline'><BiCreditCard className='text-light-300 me-1 border-b' size={15}/>Update wallet</h6></Link>
             </div>
-            <img className=' absolute  top-6 start-64' src={Star} alt=''/>
+            <img className=' absolute  top-6 start-80' src={Star} alt=''/>
             <img className=' absolute rounded-md top-0 end-0' src={Ellipse3} alt=''/>
             <img className=' absolute rounded-md bottom-0 end-0' src={Ellipse2} alt=''/>
             <img className=' absolute bottom-0 end-0' src={Ellipse4} alt=''/>
@@ -65,9 +79,11 @@ export const Wallet = () => {
       </div>
       </section>
 
-      <section className='flex justify-end me-9 '>
-        <div className='flex w-[75vw] flex-col mt-6 rounded-lg bg-secondary-300 '> 
-            <div className='ms-14 pt-6'>
+      <section className='flex justify-center items-center bg-light-200 mt-7 h-[70vh] mx-10 rounded-[14px]'>
+        <div className=''>
+          <h4 className='text-secondary-100 font-sfRegular text-lg'>There are no transactions here</h4> 
+
+            {/* <div className='ms-14 pt-6'>
               <h4 className='mt-2 text-lg font-family font-bold'>Credit spend history</h4>
               <h6 className='pb-12 mt-4  text-md'>Track your credit spend and credit purchase.</h6>
             </div>
@@ -165,10 +181,12 @@ export const Wallet = () => {
                       
                     </tbody>
 
-            </table>
+            </table> */}
 
 
         </div>
+        <Modal showModal={showModal} setShowModal={closeModal}/>
+        {/* <OtpModal showModal={showSecondModal} setShowModal={setShowSecondModal} /> */}
       </section>
 
 

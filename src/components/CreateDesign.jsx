@@ -23,7 +23,7 @@ export const CreateDesign = () => {
         <div className='mt-14 flex justify-center '>
             <div className='  text-center  '>
                     <h3 className='text-5xl font-sfMedium  '>Lets get creative</h3>
-                    <p className='mt-4 text-center text-lg text-secondary-100 font-sfRegular'>Let us help you bring your design to life, select a design type provide inspiration and what you<br></br>would like to see 
+                    <p className='mt-4 text-center text-base text-secondary-100 font-sfRegular'>Let us help you bring your design to life, select a design type provide inspiration and what you<br></br>would like to see 
                         in the design, communicate with designers to get a better understanding of your<br></br> idea and how to go about it
                     </p>
                     <div className='flex justify-between items-center font-sfRegular text-lg w-[53vw] h-[76px] rounded-[10px] bg-light-200 mt-8 px-3 py-5'>

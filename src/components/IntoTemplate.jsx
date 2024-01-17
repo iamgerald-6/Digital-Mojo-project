@@ -14,6 +14,8 @@ import Search from '../assets/search-norm.svg';
 import TemplateProfile from '../assets/TemplateProfile.svg';
 import {LiaInfoCircleSolid} from 'react-icons/lia';
 import Navbar from './Navbar';
+import CoverPic from '../assets/coverPic.png';
+import Close from '../assets/close-circle.svg';
 // import {v5 as uuidv5} from 'uuid';
 
 export const IntoTemplate = () => {
@@ -33,11 +35,26 @@ export const IntoTemplate = () => {
     //   // Filter similar searches based on the current template
     //   const similarSearches = Templates.filter((template) => template.name !== currentTemplate.name);
     
+        const backImage ={
+            backgroundImage: `url(${CoverPic})`,
+            height: "16vh",
+            
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }
   return (
     <>
         
+           <Navbar />
+            
+            <div style={backImage} className='flex flex-col justify-center items-center '>
+              {/* <img src={CoverPic}/> */}
+                
+                
+            </div>
         
-        <div className='relative h-[] w-[100%] bg-light-200 rounded-t-[21px]'>
+        <div className='bg-secondary-pic'>
+        <div className=' w-[100%] bg-light-200 rounded-t-[21px] sticky  '>
             <div className='flex justify-between px-14 py-10'>
                 <div className='flex '>
                     <img className='w-[72px] h-[72px]' src={TemProfile} alt=''/>
@@ -60,26 +77,26 @@ export const IntoTemplate = () => {
                 <img className='w-[33vw] h-[70vh]' src={Tut1} alt='Template1'/>
                 
             </div>
-            <div className='mx-5'>
-                <h3>Free PSD black Friday super sale social media banner template</h3>
-                <div className='flex'>
-                     <img  src={Documents} alt='icon-document'/><span>File type:<span>PSD,JPG.</span></span>
+            <div className='mx-6 '>
+                <h3 className='font-sfMedium mt-16 text-lg text-dark-100'>Free PSD black Friday super sale social media banner template</h3>
+                <div className='flex mt-2'>
+                     <img  className='w-[20px] h-[20px] mt-1' src={Documents} alt='icon-document'/><span className='ms-2 mt-0.5 font-sfMedium text-dark-100 text-base'>File type:<span className='text-secondary-100 ms-1'>PSD,JPG.</span></span>
                 </div>
             </div>
-            <div className='mx-5'>
-                <h3 className=''>Related Tags</h3>
-                <div className='flex'>
-                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='  border flex px-4 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-5'><img src={Search} alt='' /></span>Black Friday</motion.h4>
-                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-4 border flex px-4 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-5'><img src={Search} alt='' /></span>Black Friday post</motion.h4>
-                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-4 border flex px-4 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-5'><img src={Search} alt='' /></span>Black Friday Instagram</motion.h4>
-                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-4 border flex px-4 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-5'><img src={Search} alt='' /></span>Sales post</motion.h4>
-                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-4 border flex px-4 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-5'><img src={Search} alt='' /></span>Social media sales </motion.h4>
+            <div className='mx-6'>
+                <h3 className='mt-10 font-sfRegular text-base'>Related Tags</h3>
+                <div className='flex mt-4 font-sfRegular text-sm'>
+                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='  border flex px-3 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-3'><img className='w-[20px] h-[20px]' src={Search} alt='' /></span>Black Friday</motion.h4>
+                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-3 border flex px-3 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-3'><img className='w-[20px] h-[20px]' src={Search} alt='' /></span>Black Friday post</motion.h4>
+                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-3 border flex px-3 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-3'><img className='w-[20px] h-[20px]' src={Search} alt='' /></span>Black Friday Instagram</motion.h4>
+                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-3 border flex px-3 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-3'><img className='w-[20px] h-[20px]' src={Search} alt='' /></span>Sales post</motion.h4>
+                    <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-3 border flex px-3 py-1 rounded-[8px] cursor-pointer font-sfRegular'><span className='me-3'><img className='w-[20px] h-[20px]' src={Search} alt='' /></span>Social media sales </motion.h4>
               </div>
             </div>
-            <div className='flex  mt-5 mx-5 '>
+            <div className='flex  mt-8 mx-6 '>
                 <h3 className='md:mt-3 sm:mt-16 mt-16 text-xl font-sfBold'>Similar searches</h3>
             </div>
-            <div className='grid  md:grid-cols-4 gap-4 sm:grid-cols-2 sm:gap-3 mt-3 mx-10 pb-32'>
+            <div className='grid  md:grid-cols-4 gap-4 sm:grid-cols-2 sm:gap-3 mt-3 mx-6 pb-32'>
                 <div className=' '>
                     {/* {similarSearches.map((search) => (
                             <div key={search.id}>
@@ -118,6 +135,9 @@ export const IntoTemplate = () => {
                 </div>
 
             </div>
+            <Link to='/templates' ><img   className='cursor-pointer absolute w-[20px] h-[20px] top-2 end-5' src={Close} alt='close-icon'/></Link>
+        </div>
+       
         </div>
     
     

@@ -1,12 +1,16 @@
 import React from 'react';
-import {NavPage} from '../components/NavPage.jsx';
+
 import { Wallet } from '../components/Wallet.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 export const WalletPage = () => {
+  // const [modal, setModal] =useState(false)
   return (
     <>
-        <NavPage element='props-search' elementId='props-filter' name='Wallet & Invoices' paragraph='manage your billing information, credits and credit spend'/>
-        <Wallet/>
+        <Navbar/>
+        <Wallet />
+        <Footer/>
     </>
   )
 }

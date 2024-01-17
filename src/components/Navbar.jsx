@@ -20,27 +20,28 @@ import {motion} from 'framer-motion'
   
   return (
     <>
-      <header className='flex flex-col w-[100%] '>
-      <div className=' h-[1.5vh] w-[100%] bg-gradient-to-r  from-purp-100 via-purp-200 to-purp-300'>
+    <div className=' h-[1.5vh] w-[100%] bg-gradient-to-r  from-purp-100 via-purp-200 to-purp-300'>
                       
-      </div>
-        <motion.nav initial={{y:-100}} animate={{y:0}} transition={{delay:0.4, type:'spring', stiffness:400}} className={`${fixed ? 'fixed top-0 shadow-lg duration-500 transition ease-out' : ''} z-30 bg-light-200  items-center flex  px-10  h-[12vh]  justify-between w-[100%] `}  >
+                      </div>
+      <header className='flex flex-col w-[100%]  bg-[rgb(255,253,253)] opacity-95 sticky top-0 z-30'>
+      
+        <motion.nav initial={{y:-100}} animate={{y:0}} transition={{delay:0.4, type:'spring', stiffness:400}} className= 'z-30   items-center flex  px-10  h-[12vh]  justify-between w-[100%] backdrop-blur-lg'  >
               
               <div >
                 <Link to='/' className='text-2xl font-semibold font-family leading-8 text-dark-100'>DezignSntr</Link>
               </div>
 
               <ul className='flex gap-14 pt-1 '>
-                <li ><Link to='/explore' className='text-base font-sfMedium hoverNav'>Explore designs</Link></li>
+                <li ><Link to='/explore' className='text-base font-sfMedium hoverNav'>Create designs</Link></li>
                 <li><Link to='/' className=' font-sfMedium hoverNav'>Resources</Link></li>
                 <li><Link to='#' className=' font-sfMedium hoverNav'>Events</Link></li>
                 <li><Link to='#' className='font-sfMedium hoverNav'>My Designs</Link></li>
-                <li><Link to='/chat' className=' font-sfMedium hoverNav'>Chat</Link></li>
+                <li><Link to='/chat' className=' font-sfMedium hoverNav'>Account</Link></li>
                
               </ul>
               <div  className='flex  pt-1.5'>
                 <ul className='me-3'>
-                  <li className=' font-sfMedium cursor-pointer hoverNav mt-1'>Pricing
+                  <li className=' font-sfMedium cursor-pointer hoverNav mt-1'><Link to='/wallet'>Pricing</Link>
                       <ul className='z-20 hidden'>
                         <li className='z-50'>free</li>
                         <li className='z-50'>Standard</li>

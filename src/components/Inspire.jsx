@@ -19,13 +19,13 @@ export const Inspire = () => {
          <div className='mt-14 flex justify-center '>
             <div className='  text-center '>
                     <h3 className=' tracking-wide text-4xl font-sfMedium  '>Inspire our design</h3>
-                    <p className='mt-3 text-center text-lg font-sfRegular text-secondary-100'>Help designers better understand and give you the best results by sharing designs you love and
+                    <p className='mt-3 text-center text-base font-sfRegular text-secondary-100'>Help designers better understand and give you the best results by sharing designs you love and
                     <br/> also what  you love about those designs,
                     <span className='text-black'>example (brand colors, Imagery, layout Etc)</span>
                     </p>
                     <form  className='flex ms-12 mt-10 w-[45vw] rounded-[10px] px-5 bg-light-200 relative '>
-                          <img className='w-[25px] h-[23px] absolute xl:top-6 left-2' src={SearchIcon} alt='search'/>
-                          <input  className='w-[45vw] py-5 px-5 bg-light-200 text-lg outline-light-200 placeholder-secondary-100' type='search' placeholder='Search for design inspiration' />
+                          <img className='w-[20px] h-[20px] absolute xl:top-6 left-4' src={SearchIcon} alt='search'/>
+                          <input  className='w-[45vw] py-5 px-6 bg-light-200 text-base mt-0.5 outline-light-200 placeholder-secondary-100' type='search' placeholder='Search for design inspiration' />
                     </form>
             </div>
         </div>

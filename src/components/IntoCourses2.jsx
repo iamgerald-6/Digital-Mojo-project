@@ -53,7 +53,7 @@ export const IntoCourses2 = () => {
                                 <h3 className='text-2xl font-sfRegular'>Course details</h3>
                                 <p className='text-secondary-100 mt-2 font-sfRegular'>This course will teach you from beginner to advance how to market on Facebook effectively to drive traffic<br/> and get sales this course has been broken into 3 sections.</p>
 
-                                <div className='mt-24'>
+                                <div className='mt-20'>
                                     <div >
                                        <Accordion  name={`Making and Engaging post`} paragraph={` In this section you will learn the basics of creating a post and a design to post how to create and\nattach images and videos to post for engagement, and bonus tips to creating captivating and\ninteresting post that your target audience will love `}/>
                                     </div>

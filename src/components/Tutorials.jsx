@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 const Tutorials = (props) => {
   return (
     <>
-        <div className='mt-5'>
+        <div className='mt-2'>
             <div className='w-[100%] justify-between  flex px-10'>
                 <h3 className='mt-3 text-xl  font-sfBold'>{props.name}</h3>
                 <Link  to='#' className='mt-3 text-blue-700 underline font-sfMedium'>{props.title}</Link>

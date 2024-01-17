@@ -32,8 +32,8 @@ export const IntoCourses = () => {
                         </div>
 
                         <div  className='mt-12 pb-7'>
-                            <h1 className='text-3xl font-sfRegular'>Steps mentioned in this tutorial.</h1>
-                            <ul className='mt-4 list-decimal ms-5 text-secondary-100 text-xl'>
+                            <h1 className='text-2xl font-sfRegular'>Steps mentioned in this tutorial.</h1>
+                            <ul className='mt-4 list-decimal ms-5 font-sfRegular text-secondary-100 text-lg'>
                                 <li className=''>Click create a post.</li>
                                 <li className='mt-4'>Add a write up about post.</li>
                                 <li className='mt-4'>Attach image or video if any.</li>

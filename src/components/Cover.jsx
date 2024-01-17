@@ -3,11 +3,12 @@ import CoverPic from '../assets/coverPic.png';
 import SearchIcon from '../assets/search-icon.png'
 import {motion} from 'framer-motion'
 
+
 export const Cover = () => {
   
   const backImage ={
     backgroundImage: `url(${CoverPic})`,
-    height: "76vh",
+    height: "73vh",
     
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'
@@ -33,27 +34,27 @@ export const Cover = () => {
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{delay : 0.6 , duration: 2}}
-            className=' w-[57vw] h-[12vh] rounded-3xl mt-5 bg-light-200 relative'>
+            className='w-[57vw] h-[12vh] rounded-2xl mt-5 bg-light-200 relative shadow-xl'>
               <img className='w-[24px] h-[22px] absolute xl:top-7 lg:top-6 left-6' src={SearchIcon} alt='search'/>
-              <input className='w-[57vw] h-[12vh] outline-transparent rounded-[23px] ps-16 text-secondary-100 placeholder-secondary-100 text-lg' type='search'placeholder='Search' />
+              <input className='w-[57vw] h-[10vh] pt-3.5 outline-transparent rounded-[23px] ps-16 text-secondary-100 placeholder-secondary-100 text-lg' type='search'placeholder='Search' />
             </motion.div>
             <motion.div 
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{delay : 0.6 , duration: 2}}
-            className='flex mt-12 text-light-200'>
-              <h4 className='me-6 pt-1 font-sfRegular'>Trending searches</h4>
-              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-8 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Instagram post</motion.h4>
-              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-8 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Facebook post</motion.h4>
-              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-8 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Business branding</motion.h4>
-              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-8 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Branding</motion.h4>
-              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-8 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Logo</motion.h4>
+            className='flex mt-10 text-light-200 text-sm'>
+              <h4 className='me-3 pt-1 font-sfRegular'>Trending searches</h4>
+              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-6 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Instagram post</motion.h4>
+              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-6 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Facebook post</motion.h4>
+              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-6 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Business branding</motion.h4>
+              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-6 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Branding</motion.h4>
+              <motion.h4 whileHover={{x:4}} transition={{type:'spring', stiffness:400}} className='ms-6 border px-4 py-1 rounded-full cursor-pointer font-sfRegular'>Logo</motion.h4>
             </motion.div>
           
         </div>
         <div>
           
-          
+        
         </div>
     </>
   )
