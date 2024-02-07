@@ -43,13 +43,13 @@ const [value, setValue] =useState('');
                 </div>
                 <div className='flex'>
                   <h3 className='text-secondary-100 font-sfRegular mt-4 me-2'>Already have a drafted content calender</h3>
-                  <button onClick={openCalenderModal} className='bg-primary-500 font-sfRegular px-4 py-3 text-light-200 rounded-[10px]'>Upload calender</button>
+                  <button onClick={openCalenderModal} className='bg-primary-500 font-sfRegular px-4 py-2 text-light-200 rounded-[10px]'>Upload calender</button>
                 </div>
              </div>
              
               <div className='bg-light-200 rounded-[18px] px-6 py-5 mt-3 flex justify-between mx-10'>
                 <div className='bg-secondary-400 px-4 py-3 rounded-[8px] font-sfMedium flex'>
-                  <select className='flex bg-secondary-400 select-box' value={value} onChange={handleSelect}>
+                  <select className='flex bg-secondary-400 select-box relative outline-none  px-6' value={value} onChange={handleSelect}>
                   
                     {option.map(option => (
                       <option className='text-center mt-1 py-2' value={option.value}>{option.month}</option>
@@ -57,7 +57,7 @@ const [value, setValue] =useState('');
                     ))}
                     
                   </select>
-                  <img className='w-[24px] h-[24px] ms-3 z-10' src={ArrowDown} alt='arrow-icon'/>
+                  <img className='absolute start-52 w-[24px] h-[24px] rounded-full ms-3 z-10' src={ArrowDown} alt='arrow-icon'/>
                 </div>
                 <div>
                   <button className='border border-dark-100 font-sfRegular px-8 py-3 rounded-[10px] me-3' ><Link to='/addDesign'>Add new</Link></button>

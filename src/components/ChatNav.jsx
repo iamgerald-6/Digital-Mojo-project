@@ -15,27 +15,27 @@ export const ChatNav = () => {
     <>
 
         <nav className='flex  mt-4'>
-                    <ul className='flex justify-start  lg:gap-6 gap-4 py-2 overflow-x-scroll'>
-                        <li className='sm:block hidden'><NavLink style={chatNavStyle} to='/chat' className='md:text-lg sm:text-sm text-xs px-4 py-2 font-sfRegular '>
+                    <ul className='flex justify-start  lg:gap-6 md:gap-4 sm:gap-3 py-2 myOverflow'>
+                        <li className='md:block hidden'><NavLink style={chatNavStyle} to='/chat' className='md:text-lg sm:text-sm text-xs px-4 py-2 font-sfRegular '>
                             My Courses
                         </NavLink></li>
-                        <li className='sm:hidden block'><NavLink style={chatNavStyle} to='/chat' className='md:text-lg sm:text-sm text-base px-4 py-2 font-sfRegular '>
+                        <li className='md:hidden block'><NavLink style={chatNavStyle} to='/chat' className='md:text-lg  px-4 py-2 font-sfRegular '>
                             Courses
                         </NavLink></li>
-                        <li className='xl:mx-3 sm:block hidden' ><NavLink style={chatNavStyle} className=' md:text-lg px-4 py-2 font-sfRegular  'to='/chatTutorials'>
+                        <li className='xl:mx-3 md:block hidden' ><NavLink style={chatNavStyle} className=' md:text-lg px-4 py-2 font-sfRegular  'to='/chatTutorials'>
                             Recent tutorials
                         </NavLink></li>
-                        <li className='xl:mx-3 sm:hidden block' ><NavLink style={chatNavStyle} className='md:text-lg px-4 py-2 font-sfRegular  'to='/chatTutorials'>
+                        <li className='xl:mx-3 md:hidden block' ><NavLink style={chatNavStyle} className='md:text-lg px-4 py-2 font-sfRegular  'to='/chatTutorials'>
                             Tutorials
                         </NavLink></li>
-                        <li className='xl:mx-3 sm:block hidden'><NavLink style={chatNavStyle} to='/chatCatalog' className='md:text-lg font-sfRegular  px-4 py-2'>
+                        <li className='xl:mx-3 md:block hidden'><NavLink style={chatNavStyle} to='/chatCatalog' className='md:text-lg font-sfRegular  px-4 py-2'>
                             Saved catalogs
                         </NavLink></li>
-                        <li className='xl:mx-3 sm:hidden block'><NavLink style={chatNavStyle} to='/chatCatalog' className='md:text-lg font-sfRegular  px-4 py-2'>
+                        <li className='xl:mx-3 md:hidden block'><NavLink style={chatNavStyle} to='/chatCatalog' className='md:text-lg font-sfRegular  px-4 py-2'>
                             Catalogs
                         </NavLink></li>
-                        <li className='xl:mx-3 sm:block hidden'><NavLink style={chatNavStyle} to='/chatTemplate' className= 'md:text-lg font-sfRegular  px-4 py-2'>Saved template</NavLink></li>
-                        <li className='xl:mx-3 sm:hidden block'><NavLink style={chatNavStyle} to='/chatTemplate' className= 'md:text-lg font-sfRegular  px-4 py-2'>Template</NavLink></li>
+                        <li className='xl:mx-3 md:block hidden'><NavLink style={chatNavStyle} to='/chatTemplate' className= 'md:text-lg font-sfRegular  px-4 py-2'>Saved template</NavLink></li>
+                        <li className='xl:mx-3 md:hidden block'><NavLink style={chatNavStyle} to='/chatTemplate' className= 'md:text-lg font-sfRegular  px-4 py-2'>Template</NavLink></li>
                     </ul>
                     
         </nav>

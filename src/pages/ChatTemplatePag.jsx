@@ -13,7 +13,7 @@ export const ChatTemplatePag = () => {
          <Navbar/>
          <Chat name='Elton Enterprise limited'/>
         <section className='flex justify-center mt-10'>
-             <div className='bg-light-200   w-[100vw] mx-10 mb-5 rounded-2xl px-4 '>
+             <div className='bg-light-200   w-[100vw] min-h-[65vh] md:mx-10 sm:mx-5  mb-5 rounded-2xl px-2 '>
                     <ChatNav/>
                     <ChatTemplate hTag='Marketing agency'/>
                     <ChatTemplate hTag='Marketing agency'/>

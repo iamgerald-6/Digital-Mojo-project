@@ -32,6 +32,7 @@ export default {
             500:'#060508',
             600: '#A5A5A5',
             700: '#EBEBEB',
+            800:'#dcdcdb',
             'pic':'#8f8f8f'
 
 

@@ -13,20 +13,20 @@ export const TrackDesign = () => {
     <>
         <div className='mt-20 flex justify-center '>
             <div className='  text-center '>
-                    <h3 className=' tracking-wide text-4xl  font-sfMedium'>Track your design</h3>
-                    <p className='mt-3 text-center text-secondary-100 text-lg font-sfMedium'>Record of all your design created
+                    <h3 className=' tracking-wide text-3xl  font-sfMedium'>Track your design</h3>
+                    <p className='mt-3 text-center text-secondary-100 text-base font-sfMedium'>Record of all your design created
                     
                     </p>
                     <form  className='flex mt-8 w-[44vw]  ms-4 rounded-md px-5 bg-light-200 relative '>
-                          <img className='w-[25px] h-[23px] absolute xl:top-6 left-2' src={SearchIcon} alt='search'/>
-                          <input  className='w-[44vw] py-5 ps-5 bg-light-200 text-lg placeholder-secondary-100 font-sfRegular outline-light-200 text-secondary-100' type='search' placeholder='Search by year,design type, month' />
+                          <img className='w-[20px] h-[20px] absolute xl:top-7 left-5' src={SearchIcon} alt='search'/>
+                          <input  className='w-[44vw] py-5 ps-8 mt-1.5 bg-light-200 text-base placeholder-secondary-100 font-sfRegular outline-light-200 text-secondary-100' type='search' placeholder='Search by year,design type, month' />
                     </form>
             </div>
         </div>
 
         <div className=' mt-10 mx-24'>
             <div className='flex justify-between'>
-                <h3 className='mt-3 text-sm font-sfRegular  '>July 2023</h3>
+                <h3 className='mt-3 text-sm font-family  '>July 2023</h3>
                 <h3 to='/inspiration' className='text-dark-100 flex font-semibold border border-dark-100 rounded-2xl px-3 py-1 me-5 ' ><BsFilter size={22} className=' mt-0.5 me-3'/>Filter</h3>
 
             </div>

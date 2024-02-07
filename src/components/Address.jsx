@@ -4,14 +4,14 @@ import React from 'react';
 export const Address = () => {
   return (
     <>
-             <div className='lg:w-[69vw] md:w-[80vw] sm:w-[100vw] bg-light-200 h-[95vh]  rounded-lg mt-5 me-16 sm:ms-5 ps-8 '>
+             <div className='lg:w-[69vw] md:w-[80vw] sm:w-[100vw] bg-light-200 sm:min-h-[95vh] h-full py-4  rounded-lg mt-5 md:me-11 sm:mx-4 sm:ps-10  ps-5'>
         
                 <form className='flex flex-col me-10 mt-7'>
                   
                     <label htmlFor='address' className='font-sfRegular text-xl'>Address</label>
                     <div className='mt-2'>
                       <input
-                      className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
+                      className='rounded-md ps-3 py-3 sm:w-[62vw] w-[85vw] bg-secondary-400'
                       id='address'
                       type='text'
                       placeholder='Enter Address'
@@ -24,7 +24,7 @@ export const Address = () => {
                   
                     <label htmlFor='city' className='mt-10 font-sfRegular text-xl'>City</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
+                      <input className='rounded-md ps-3 py-3 sm:w-[62vw] w-[85vw] bg-secondary-400'
                       id='city'
                       type='text' 
                       name='city'
@@ -35,7 +35,7 @@ export const Address = () => {
 
                   <label htmlFor='state' className='mt-10 font-sfRegular text-xl'>State/Region</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
+                      <input className='rounded-md ps-3 py-3 sm:w-[62vw] w-[85vw] bg-secondary-400'
                       id='state'
                       type='text' 
                       name='state'
@@ -47,7 +47,7 @@ export const Address = () => {
 
                   <label htmlFor='zip' className='mt-10 font-sfRegular text-xl'>Zip code</label>
                     <div className='mt-2'>
-                      <input className='rounded-md ps-3 py-3 w-[62vw] bg-secondary-400'
+                      <input className='rounded-md ps-3 py-3 sm:w-[62vw] w-[85vw] bg-secondary-400'
                       id='zip'
                       type='text' 
                       name='zip'

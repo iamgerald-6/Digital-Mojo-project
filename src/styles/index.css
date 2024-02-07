@@ -50,6 +50,7 @@
 
 body{
     background-color:  #F9F9FA;
+    
 }
 
 /* #####################Props########################### */
@@ -99,12 +100,20 @@ body{
 }
 
 /* #############scroll############### */
-.overflow-x-scroll::-webkit-scrollbar {
-    width:9px
-  }
 
-.overflow-x-scroll::-webkit-scrollbar-thumb {
-    display: none;
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.myOverflow{
+    overflow-x: auto;
+    height: fit-content;
+    /* white-space: nowrap; */
+
+
+}
+.myOverflow::-webkit-scrollbar {
+    display:none
   }
 
   .overflow-y-scroll::-webkit-scrollbar-thumb {
@@ -123,5 +132,21 @@ body{
 
  /* ###########################Tailwind hover#######################*/
  .hoverNav {
-    @apply hover:opacity-70 transition ease-out duration-300;
+    @apply hover:text-opacity-50 transition ease-out duration-300;
+ }
+
+ .hoverNav2 {
+    @apply hover:text-gray-600 transition ease-out duration-300
+ }
+
+
+ /* ######################Scroll snap###################### */
+ .scroll-snap{
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline:  contain;
+    scroll-padding-inline: 1rem;
+ }
+
+ .scroll-snap > *{
+    scroll-snap-align: start;
  }

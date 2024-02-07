@@ -6,7 +6,7 @@ export const CalenderModal = ({showCalenderModal, setShowCalenderModal}) => {
   return (
     <>
         { showCalenderModal ?
-        <div className="w-[100%] h-[200vh] bg-[rgba(0,0,0,0.4)] fixed flex  items-center justify-center">
+        <div className="w-[100%] h-[200vh] bg-[rgba(0,0,0,0.4)] fixed  top-0 flex  items-center justify-center z-30 ">
             <div className='bg-light-200 w-[100%] h-[170vh] rounded-s-[50px] rounded-e-[50px] flex justify-center relative pb-7'>
                 <div className='flex-col text-center mt-10'>
                     <div className=' justify-center'>
@@ -28,7 +28,7 @@ export const CalenderModal = ({showCalenderModal, setShowCalenderModal}) => {
                        <input className='font-sfRegular text-secondary-100 border w-[30vw] px-3 h-[18vh] mt-2 rounded-[5px] border-secondary-700 bg-secondary-400' type='text'/>
                     </div>
                     <div className=' flex justify-end'>
-                        <button  className="rounded-[5px] font-sfMedium py-5 px-16 border bg-dark-100  text-light-200 mt-7">
+                        <button  className="rounded-[5px] font-sfMedium py-3 px-16 border bg-dark-100  text-light-200 mt-7">
                         Continue
                         </button>
                     </div>
